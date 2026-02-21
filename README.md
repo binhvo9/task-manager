@@ -1,45 +1,53 @@
-
-
 ```md
 # Task Manager SaaS (Fullstack)
 
-Fullstack Task Management system built with:
+A fullstack Task Management system built with a modern production-ready stack.
 
+---
+
+## 🚀 Tech Stack
+
+### Frontend
 - React (Vite)
+- Axios
+
+### Backend
 - Express.js
 - PostgreSQL
 - Prisma ORM
 - JWT Authentication
-- Multi-user architecture
+- bcrypt (password hashing)
 
 ---
 
-## Architecture
+## 🏗 Architecture
 
 ```
 
 task-manager/
-├── frontend/   (React app)
-├── backend/    (Express API + Prisma)
+├── frontend/   (React application)
+└── backend/    (Express API + Prisma + PostgreSQL)
 
 ```
 
 ---
 
-## Features
+## 🔐 Features
 
-- User registration & login (JWT auth)
+- User registration
+- User login (JWT authentication)
 - Password hashing with bcrypt
-- Protected routes
+- Protected API routes
 - Multi-user task ownership
 - Full CRUD (Create, Read, Update, Delete)
-- PostgreSQL relational database
-- Prisma ORM
-- Clean backend structure
+- Persistent PostgreSQL database
+- Prisma relational data modeling
 
 ---
 
-## Backend Setup
+## ⚙️ Local Development Setup
+
+### Backend
 
 ```
 
@@ -50,9 +58,16 @@ node src/server.js
 
 ```
 
+Server runs at:
+```
+
+[http://localhost:5000](http://localhost:5000)
+
+```
+
 ---
 
-## Frontend Setup
+### Frontend
 
 ```
 
@@ -62,29 +77,39 @@ npm run dev
 
 ```
 
----
-
-## Tech Stack
-
-Frontend:
-- React
-- Vite
-- Axios
-
-Backend:
-- Express
-- Prisma
-- PostgreSQL
-- JWT
-- bcrypt
-
----
-
-## Status
-
-Checkpoint: v1-auth-working  
-Database persistent.  
-JWT authentication working.  
-Multi-user architecture implemented.
+Frontend runs at:
 ```
 
+[http://localhost:5173](http://localhost:5173)
+
+```
+
+---
+
+## 🧠 Current Status
+
+Checkpoint: `v1-auth-working`
+
+- PostgreSQL connected ✅
+- Prisma migrations working ✅
+- JWT authentication working ✅
+- Multi-user architecture implemented ✅
+- Backend protected routes working ✅
+
+---
+
+## 📌 Planned Improvements
+
+- Backend architecture refactor
+- Input validation (Zod)
+- Centralized error handling
+- Frontend auth flow integration
+- Production deployment
+
+---
+
+## 👤 Author
+
+Binh Vo  
+Fullstack Developer
+```
