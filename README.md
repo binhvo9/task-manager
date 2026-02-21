@@ -1,16 +1,90 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+```md
+# Task Manager SaaS (Fullstack)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fullstack Task Management system built with:
 
-## React Compiler
+- React (Vite)
+- Express.js
+- PostgreSQL
+- Prisma ORM
+- JWT Authentication
+- Multi-user architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+
+task-manager/
+├── frontend/   (React app)
+├── backend/    (Express API + Prisma)
+
+```
+
+---
+
+## Features
+
+- User registration & login (JWT auth)
+- Password hashing with bcrypt
+- Protected routes
+- Multi-user task ownership
+- Full CRUD (Create, Read, Update, Delete)
+- PostgreSQL relational database
+- Prisma ORM
+- Clean backend structure
+
+---
+
+## Backend Setup
+
+```
+
+cd backend
+npm install
+npx prisma migrate dev
+node src/server.js
+
+```
+
+---
+
+## Frontend Setup
+
+```
+
+cd frontend
+npm install
+npm run dev
+
+```
+
+---
+
+## Tech Stack
+
+Frontend:
+- React
+- Vite
+- Axios
+
+Backend:
+- Express
+- Prisma
+- PostgreSQL
+- JWT
+- bcrypt
+
+---
+
+## Status
+
+Checkpoint: v1-auth-working  
+Database persistent.  
+JWT authentication working.  
+Multi-user architecture implemented.
+```
+
